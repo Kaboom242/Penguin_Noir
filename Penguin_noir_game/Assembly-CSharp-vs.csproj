@@ -47,7 +47,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Camera_movement.cs" />
+<<<<<<< HEAD
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+=======
+>>>>>>> 90818368f31cf3ae4e90282838dd3d3e85a0aee2
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
