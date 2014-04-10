@@ -31,12 +31,11 @@
 -define:ENABLE_NAVMESH_CARVING
 -define:ENABLE_DUCK_TYPING
 -define:ENABLE_SINGLE_INSTANCE_BUILD_SETTING
--define:UNITY_4_3_2
+-define:UNITY_4_3_0
 -define:UNITY_4_3
 -define:ENABLE_PROFILER
 -define:UNITY_EDITOR
 -define:UNITY_EDITOR_WIN
--define:UNITY_TEAM_LICENSE
 Assets/Scripts/Camera_movement.cs
 Assets/Scripts/PlayerController.cs
 -r:"C:/Program Files (x86)/Unity/Editor/Data/Mono\lib/mono/unity\System.Runtime.Serialization.dll"
