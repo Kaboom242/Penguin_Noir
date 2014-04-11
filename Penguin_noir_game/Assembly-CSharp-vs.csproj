@@ -180,6 +180,7 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
      <Compile Include="Assets\Scripts\Camera_movement.cs" />
+     <Compile Include="Assets\Scripts\InGame_menu.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\NGUI\ReadMe - 3.5.6.txt" />
