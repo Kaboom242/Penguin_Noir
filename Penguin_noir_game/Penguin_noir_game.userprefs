@@ -4,8 +4,7 @@
     <Files>
       <File FileName="Assets\Scripts\Camera_movement.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\InGame_menu.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="23" Column="104" />
-      <File FileName="Assets\iTween\Sample\MoveSample.cs" Line="7" Column="116" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="22" Column="74" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
