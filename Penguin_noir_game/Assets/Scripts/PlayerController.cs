@@ -2,7 +2,10 @@
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
-	public GameObject cam;
+	public Camera cam;
+	public GameObject moveTarget;
+	private Vector3 newLoc;
+	
 	// Use this for initialization
 	void Start () {
 	
@@ -13,9 +16,19 @@ public class PlayerController : MonoBehaviour {
 	{
 		if (Input.GetMouseButtonDown(0))
 		{
-			if (Physics.Raycast(cam.transform.position, transform.position - cam.transform.position, 10));
-			Debug.DrawRay(cam.transform.position, transform.position - cam.transform.position);
+			RaycastHit hit;
+			if (!Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition),  out hit, 100))
+				return;
+				newLoc = new Vector3 (hit.point.x, transform.position.y, hit.point.z);
+				Debug.Log(hit.point);
+				Debug.Log(newLoc);
+			moveTarget.transform.position = newLoc;
+			
+			iTweenEvent.GetEvent(gameObject, "Move").Play();
+			
+			
 		}
+		
 	
 	}
 }
