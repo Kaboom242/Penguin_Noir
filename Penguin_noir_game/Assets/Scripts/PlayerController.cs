@@ -5,10 +5,12 @@ public class PlayerController : MonoBehaviour {
 	public Camera cam;
 	public GameObject moveTarget;
 	private Vector3 newLoc;
+	NavMeshAgent agent;
 	
 	// Use this for initialization
-	void Start () {
-	
+	void Start () 
+	{
+		agent = gameObject.GetComponent<NavMeshAgent> ();
 	}
 	
 	// Update is called once per frame
@@ -23,8 +25,9 @@ public class PlayerController : MonoBehaviour {
 				Debug.Log(hit.point);
 				Debug.Log(newLoc);
 			moveTarget.transform.position = newLoc;
-			
-			iTweenEvent.GetEvent(gameObject, "Move").Play();
+
+			agent.SetDestination(moveTarget.transform.position);
+			//iTweenEvent.GetEvent(gameObject, "Move").Play();
 			
 			
 		}
