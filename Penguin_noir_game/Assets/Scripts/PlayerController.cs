@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour {
 			RaycastHit hit;
 			if (!Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition),  out hit, 100))
 				return;
-				newLoc = new Vector3 (hit.point.x, transform.position.y, hit.point.z);
+				newLoc = hit.point;
 				Debug.Log(hit.point);
 				Debug.Log(newLoc);
 			moveTarget.transform.position = newLoc;
