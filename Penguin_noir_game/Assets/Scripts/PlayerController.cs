@@ -7,11 +7,14 @@ public class PlayerController : MonoBehaviour {
 	private Vector3 newLoc;
 	private bool canMove = true;
 	NavMeshAgent agent;
+	Animator anim;
+	public GameObject character;
 	
 	// Use this for initialization
 	void Start () 
 	{
 		agent = gameObject.GetComponent<NavMeshAgent> ();
+		anim = gameObject.GetComponentInChildren<Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -23,15 +26,14 @@ public class PlayerController : MonoBehaviour {
 			if (!Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition),  out hit, 100))
 				return;
 				newLoc = new Vector3 (hit.point.x, transform.position.y, hit.point.z);
-				Debug.Log(hit.point);
-				Debug.Log(newLoc);
+				
 			moveTarget.transform.position = newLoc;
 
 			agent.SetDestination(moveTarget.transform.position);
 			//iTweenEvent.GetEvent(gameObject, "Move").Play();
-			
-			
 		}
+
+		anim.SetFloat("Speed", agent.remainingDistance);
 		
 	
 	}

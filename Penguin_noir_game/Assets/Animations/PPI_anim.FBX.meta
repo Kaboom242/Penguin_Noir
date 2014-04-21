@@ -1,0 +1,372 @@
+fileFormatVersion: 2
+guid: d7083732010791244b3099ecbc4fdc1b
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Ape
+    100002: ApeHead
+    100004: ApeLArm1
+    100006: ApeLArm2
+    100008: ApeLArmCollarbone
+    100010: ApeLArmDigit1you1
+    100012: ApeLArmDigit1you2
+    100014: ApeLArmDigit2in1
+    100016: ApeLArmDigit2in2
+    100018: ApeLArmDigit2in3
+    100020: ApeLArmDigit3the1
+    100022: ApeLArmDigit3the2
+    100024: ApeLArmDigit3the3
+    100026: ApeLArmPalm
+    100028: ApeLLeg1
+    100030: ApeLLeg2
+    100032: ApeLLegDigit01
+    100034: ApeLLegPalm
+    100036: ApeLLegPlatform
+    100038: ApeNeck
+    100040: ApePelvis
+    100042: ApeRArm1
+    100044: ApeRArm2
+    100046: ApeRArmCollarbone
+    100048: ApeRArmDigit1fuck1
+    100050: ApeRArmDigit1fuck2
+    100052: ApeRArmDigit2fraking1
+    100054: ApeRArmDigit2fraking2
+    100056: ApeRArmDigit2fraking3
+    100058: ApeRArmDigit3arse1
+    100060: ApeRArmDigit3arse2
+    100062: ApeRArmDigit3arse3
+    100064: ApeRArmPalm
+    100066: ApeRibcage
+    100068: ApeRLeg1
+    100070: ApeRLeg2
+    100072: ApeRLegDigit0TY1
+    100074: ApeRLegPalm
+    100076: ApeRLegPlatform
+    100078: ApeSpine1
+    100080: ApeSpine2
+    100082: Box002
+    100084: //RootNode
+    400000: Ape
+    400002: ApeHead
+    400004: ApeLArm1
+    400006: ApeLArm2
+    400008: ApeLArmCollarbone
+    400010: ApeLArmDigit1you1
+    400012: ApeLArmDigit1you2
+    400014: ApeLArmDigit2in1
+    400016: ApeLArmDigit2in2
+    400018: ApeLArmDigit2in3
+    400020: ApeLArmDigit3the1
+    400022: ApeLArmDigit3the2
+    400024: ApeLArmDigit3the3
+    400026: ApeLArmPalm
+    400028: ApeLLeg1
+    400030: ApeLLeg2
+    400032: ApeLLegDigit01
+    400034: ApeLLegPalm
+    400036: ApeLLegPlatform
+    400038: ApeNeck
+    400040: ApePelvis
+    400042: ApeRArm1
+    400044: ApeRArm2
+    400046: ApeRArmCollarbone
+    400048: ApeRArmDigit1fuck1
+    400050: ApeRArmDigit1fuck2
+    400052: ApeRArmDigit2fraking1
+    400054: ApeRArmDigit2fraking2
+    400056: ApeRArmDigit2fraking3
+    400058: ApeRArmDigit3arse1
+    400060: ApeRArmDigit3arse2
+    400062: ApeRArmDigit3arse3
+    400064: ApeRArmPalm
+    400066: ApeRibcage
+    400068: ApeRLeg1
+    400070: ApeRLeg2
+    400072: ApeRLegDigit0TY1
+    400074: ApeRLegPalm
+    400076: ApeRLegPlatform
+    400078: ApeSpine1
+    400080: ApeSpine2
+    400082: Box002
+    400084: //RootNode
+    4300000: Box002
+    7400000: Idle
+    7400002: Walk
+    9500000: //RootNode
+    13700000: Box002
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Ape
+        weight: 1
+      - path: ApeLLegPlatform
+        weight: 1
+      - path: ApePelvis
+        weight: 1
+      - path: ApePelvis/ApeLLeg1
+        weight: 1
+      - path: ApePelvis/ApeLLeg1/ApeLLeg2
+        weight: 1
+      - path: ApePelvis/ApeLLeg1/ApeLLeg2/ApeLLegPalm
+        weight: 1
+      - path: ApePelvis/ApeLLeg1/ApeLLeg2/ApeLLegPalm/ApeLLegDigit01
+        weight: 1
+      - path: ApePelvis/ApeRLeg1
+        weight: 1
+      - path: ApePelvis/ApeRLeg1/ApeRLeg2
+        weight: 1
+      - path: ApePelvis/ApeRLeg1/ApeRLeg2/ApeRLegPalm
+        weight: 1
+      - path: ApePelvis/ApeRLeg1/ApeRLeg2/ApeRLegPalm/ApeRLegDigit0TY1
+        weight: 1
+      - path: ApePelvis/ApeSpine1
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeLArmCollarbone
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeLArmCollarbone/ApeLArm1
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeLArmCollarbone/ApeLArm1/ApeLArm2
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeLArmCollarbone/ApeLArm1/ApeLArm2/ApeLArmPalm
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeLArmCollarbone/ApeLArm1/ApeLArm2/ApeLArmPalm/ApeLArmDigit1you1
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeLArmCollarbone/ApeLArm1/ApeLArm2/ApeLArmPalm/ApeLArmDigit1you1/ApeLArmDigit1you2
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeLArmCollarbone/ApeLArm1/ApeLArm2/ApeLArmPalm/ApeLArmDigit2in1
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeLArmCollarbone/ApeLArm1/ApeLArm2/ApeLArmPalm/ApeLArmDigit2in1/ApeLArmDigit2in2
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeLArmCollarbone/ApeLArm1/ApeLArm2/ApeLArmPalm/ApeLArmDigit2in1/ApeLArmDigit2in2/ApeLArmDigit2in3
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeLArmCollarbone/ApeLArm1/ApeLArm2/ApeLArmPalm/ApeLArmDigit3the1
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeLArmCollarbone/ApeLArm1/ApeLArm2/ApeLArmPalm/ApeLArmDigit3the1/ApeLArmDigit3the2
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeLArmCollarbone/ApeLArm1/ApeLArm2/ApeLArmPalm/ApeLArmDigit3the1/ApeLArmDigit3the2/ApeLArmDigit3the3
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeNeck
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeNeck/ApeHead
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeRArmCollarbone
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeRArmCollarbone/ApeRArm1
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeRArmCollarbone/ApeRArm1/ApeRArm2
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeRArmCollarbone/ApeRArm1/ApeRArm2/ApeRArmPalm
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeRArmCollarbone/ApeRArm1/ApeRArm2/ApeRArmPalm/ApeRArmDigit1fuck1
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeRArmCollarbone/ApeRArm1/ApeRArm2/ApeRArmPalm/ApeRArmDigit1fuck1/ApeRArmDigit1fuck2
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeRArmCollarbone/ApeRArm1/ApeRArm2/ApeRArmPalm/ApeRArmDigit2fraking1
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeRArmCollarbone/ApeRArm1/ApeRArm2/ApeRArmPalm/ApeRArmDigit2fraking1/ApeRArmDigit2fraking2
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeRArmCollarbone/ApeRArm1/ApeRArm2/ApeRArmPalm/ApeRArmDigit2fraking1/ApeRArmDigit2fraking2/ApeRArmDigit2fraking3
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeRArmCollarbone/ApeRArm1/ApeRArm2/ApeRArmPalm/ApeRArmDigit3arse1
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeRArmCollarbone/ApeRArm1/ApeRArm2/ApeRArmPalm/ApeRArmDigit3arse1/ApeRArmDigit3arse2
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeRArmCollarbone/ApeRArm1/ApeRArm2/ApeRArmPalm/ApeRArmDigit3arse1/ApeRArmDigit3arse2/ApeRArmDigit3arse3
+        weight: 1
+      - path: ApeRLegPlatform
+        weight: 1
+      - path: Box002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 25
+      lastFrame: 55
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Ape
+        weight: 1
+      - path: ApeLLegPlatform
+        weight: 1
+      - path: ApePelvis
+        weight: 1
+      - path: ApePelvis/ApeLLeg1
+        weight: 1
+      - path: ApePelvis/ApeLLeg1/ApeLLeg2
+        weight: 1
+      - path: ApePelvis/ApeLLeg1/ApeLLeg2/ApeLLegPalm
+        weight: 1
+      - path: ApePelvis/ApeLLeg1/ApeLLeg2/ApeLLegPalm/ApeLLegDigit01
+        weight: 1
+      - path: ApePelvis/ApeRLeg1
+        weight: 1
+      - path: ApePelvis/ApeRLeg1/ApeRLeg2
+        weight: 1
+      - path: ApePelvis/ApeRLeg1/ApeRLeg2/ApeRLegPalm
+        weight: 1
+      - path: ApePelvis/ApeRLeg1/ApeRLeg2/ApeRLegPalm/ApeRLegDigit0TY1
+        weight: 1
+      - path: ApePelvis/ApeSpine1
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeLArmCollarbone
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeLArmCollarbone/ApeLArm1
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeLArmCollarbone/ApeLArm1/ApeLArm2
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeLArmCollarbone/ApeLArm1/ApeLArm2/ApeLArmPalm
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeLArmCollarbone/ApeLArm1/ApeLArm2/ApeLArmPalm/ApeLArmDigit1you1
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeLArmCollarbone/ApeLArm1/ApeLArm2/ApeLArmPalm/ApeLArmDigit1you1/ApeLArmDigit1you2
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeLArmCollarbone/ApeLArm1/ApeLArm2/ApeLArmPalm/ApeLArmDigit2in1
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeLArmCollarbone/ApeLArm1/ApeLArm2/ApeLArmPalm/ApeLArmDigit2in1/ApeLArmDigit2in2
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeLArmCollarbone/ApeLArm1/ApeLArm2/ApeLArmPalm/ApeLArmDigit2in1/ApeLArmDigit2in2/ApeLArmDigit2in3
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeLArmCollarbone/ApeLArm1/ApeLArm2/ApeLArmPalm/ApeLArmDigit3the1
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeLArmCollarbone/ApeLArm1/ApeLArm2/ApeLArmPalm/ApeLArmDigit3the1/ApeLArmDigit3the2
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeLArmCollarbone/ApeLArm1/ApeLArm2/ApeLArmPalm/ApeLArmDigit3the1/ApeLArmDigit3the2/ApeLArmDigit3the3
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeNeck
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeNeck/ApeHead
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeRArmCollarbone
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeRArmCollarbone/ApeRArm1
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeRArmCollarbone/ApeRArm1/ApeRArm2
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeRArmCollarbone/ApeRArm1/ApeRArm2/ApeRArmPalm
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeRArmCollarbone/ApeRArm1/ApeRArm2/ApeRArmPalm/ApeRArmDigit1fuck1
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeRArmCollarbone/ApeRArm1/ApeRArm2/ApeRArmPalm/ApeRArmDigit1fuck1/ApeRArmDigit1fuck2
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeRArmCollarbone/ApeRArm1/ApeRArm2/ApeRArmPalm/ApeRArmDigit2fraking1
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeRArmCollarbone/ApeRArm1/ApeRArm2/ApeRArmPalm/ApeRArmDigit2fraking1/ApeRArmDigit2fraking2
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeRArmCollarbone/ApeRArm1/ApeRArm2/ApeRArmPalm/ApeRArmDigit2fraking1/ApeRArmDigit2fraking2/ApeRArmDigit2fraking3
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeRArmCollarbone/ApeRArm1/ApeRArm2/ApeRArmPalm/ApeRArmDigit3arse1
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeRArmCollarbone/ApeRArm1/ApeRArm2/ApeRArmPalm/ApeRArmDigit3arse1/ApeRArmDigit3arse2
+        weight: 1
+      - path: ApePelvis/ApeSpine1/ApeSpine2/ApeRibcage/ApeRArmCollarbone/ApeRArm1/ApeRArm2/ApeRArmPalm/ApeRArmDigit3arse1/ApeRArmDigit3arse2/ApeRArmDigit3arse3
+        weight: 1
+      - path: ApeRLegPlatform
+        weight: 1
+      - path: Box002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 
