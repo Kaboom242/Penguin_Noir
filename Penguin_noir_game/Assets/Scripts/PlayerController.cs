@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour {
 	public Camera cam;
 	public GameObject moveTarget;
 	private Vector3 newLoc;
+	private bool canMove = true;
 	NavMeshAgent agent;
 	
 	// Use this for initialization
@@ -16,7 +17,7 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (Input.GetMouseButtonDown(0))
+		if (Input.GetMouseButtonDown(0) && canMove == true)
 		{
 			RaycastHit hit;
 			if (!Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition),  out hit, 100))
@@ -39,6 +40,7 @@ public class PlayerController : MonoBehaviour {
 	{
 		if (collider.gameObject.name == "Teleport")
 		{
+			canMove = false;
 			cam.GetComponent<Camera_movement>().FadeOut();
 			
 		}
@@ -49,6 +51,7 @@ public class PlayerController : MonoBehaviour {
 		transform.position = destination;
 		cam.GetComponent<Camera_movement>().FadeIn();
 		agent.Warp(destination);
+		canMove = true;
 		
 	}
 }
