@@ -11,6 +11,29 @@ public class Camera_movement : MonoBehaviour {
 	public float shake_decay;
 	float shake_intensity;
 	public float ShakeIT = .04f;
+	public GameObject player;
+	
+	void Start ()
+		
+	{
+		
+		//Make a default black color fade 
+		
+		iTween.CameraFadeAdd();
+		
+		
+		
+		//Fade from black:
+		
+		//iTween.CameraFadeFrom(iTween.Hash("amount",.5));
+		
+		
+		
+		
+		
+	}
+	
+	
 	
 	void OnGUI (){
 		if (GUI.Button (new Rect (100,40,80,20), "Shake")){
@@ -37,5 +60,25 @@ public class Camera_movement : MonoBehaviour {
 		originRotation = transform.rotation;
 		shake_decay = 0.002f;
 		shake_intensity = ShakeIT;
+	}
+	
+	public void FadeOut()
+	{
+		//Fade to black
+		
+		iTween.CameraFadeTo(iTween.Hash("amount",.5,"time", 2, "onComplete","ToTeleport","onCompleteTarget",gameObject));
+		
+		
+	}
+	
+	public void FadeIn()
+	{
+		//Fade from black:
+		iTween.CameraFadeTo(iTween.Hash("amount",0));
+	}
+	
+	void ToTeleport()
+	{
+		player.GetComponent<PlayerController>().Teleport(new Vector3 (-5,player.transform.position.y,-13.5f));
 	}
 }

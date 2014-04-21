@@ -34,4 +34,21 @@ public class PlayerController : MonoBehaviour {
 		
 	
 	}
+	
+	void OnTriggerEnter(Collider collider)
+	{
+		if (collider.gameObject.name == "Teleport")
+		{
+			cam.GetComponent<Camera_movement>().FadeOut();
+			
+		}
+	}
+	
+	public void Teleport(Vector3 destination)
+	{
+		transform.position = destination;
+		cam.GetComponent<Camera_movement>().FadeIn();
+		agent.Warp(destination);
+		
+	}
 }
