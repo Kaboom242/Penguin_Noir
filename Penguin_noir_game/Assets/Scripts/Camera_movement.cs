@@ -12,6 +12,8 @@ public class Camera_movement : MonoBehaviour {
 	float shake_intensity;
 	public float ShakeIT = .04f;
 	public GameObject player;
+	private bool isInside = false;
+	private Vector3 teleportTo;
 	
 	void Start ()
 		
@@ -62,12 +64,12 @@ public class Camera_movement : MonoBehaviour {
 		shake_intensity = ShakeIT;
 	}
 	
-	public void FadeOut()
+	public void FadeOut(Vector3 location)
 	{
 		//Fade to black
-		
+		Debug.Log (location);
 		iTween.CameraFadeTo(iTween.Hash("amount",.5,"time", 2, "onComplete","ToTeleport","onCompleteTarget",gameObject));
-		
+		teleportTo = location;
 		
 	}
 	
@@ -75,10 +77,21 @@ public class Camera_movement : MonoBehaviour {
 	{
 		//Fade from black:
 		iTween.CameraFadeTo(iTween.Hash("amount",0));
+
 	}
 	
 	void ToTeleport()
 	{
-		player.GetComponent<PlayerController>().Teleport(new Vector3 (-5,player.transform.position.y,-13.5f));
+		player.GetComponent<PlayerController>().Teleport(teleportTo);
+		if (isInside == false)
+		{
+			camera.orthographicSize = 6.3f;
+			isInside = true;
+		}
+		else if (isInside == true)
+		{
+			camera.orthographicSize = 12.24f;
+			isInside = false;
+		}
 	}
 }

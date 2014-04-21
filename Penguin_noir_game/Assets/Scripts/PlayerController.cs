@@ -43,7 +43,13 @@ public class PlayerController : MonoBehaviour {
 		if (collider.gameObject.name == "Teleport")
 		{
 			canMove = false;
-			cam.GetComponent<Camera_movement>().FadeOut();
+			cam.GetComponent<Camera_movement>().FadeOut(new Vector3 (-77, gameObject.transform.position.y,28));
+			
+		}
+		if (collider.gameObject.name == "TeleportBack")
+		{
+			canMove = false;
+			cam.GetComponent<Camera_movement>().FadeOut(new Vector3 (-34, gameObject.transform.position.y,23));
 			
 		}
 	}
