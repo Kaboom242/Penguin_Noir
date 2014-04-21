@@ -34,6 +34,10 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		anim.SetFloat("Speed", agent.remainingDistance);
+//		if (agent.remainingDistance < 0.8f)
+//		{
+//			agent.Stop();
+//		}
 		
 	
 	}
@@ -43,7 +47,7 @@ public class PlayerController : MonoBehaviour {
 		if (collider.gameObject.name == "Teleport")
 		{
 			canMove = false;
-			cam.GetComponent<Camera_movement>().FadeOut(new Vector3 (-77, gameObject.transform.position.y,28));
+			cam.GetComponent<Camera_movement>().FadeOut(new Vector3 (-77, gameObject.transform.position.y,16.8f));
 			
 		}
 		if (collider.gameObject.name == "TeleportBack")
