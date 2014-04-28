@@ -4,6 +4,9 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 	public Camera cam;
 	public GameObject moveTarget;
+	public float sprintSpeed;
+	public float walkSpeed;
+	public float walkRadius;
 	private Vector3 newLoc;
 	private bool canMove = true;
 	NavMeshAgent agent;
@@ -34,6 +37,15 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		anim.SetFloat("Speed", agent.velocity.magnitude);
+
+		if (Vector3.Distance(transform.position, moveTarget.transform.position) > walkRadius)
+		{
+			agent.speed = sprintSpeed;
+		}
+		else 
+		{
+			agent.speed = walkSpeed;
+		}
 //		if (agent.remainingDistance < 0.8f)
 //		{
 //			agent.Stop();
@@ -64,6 +76,13 @@ public class PlayerController : MonoBehaviour {
 		cam.GetComponent<Camera_movement>().FadeIn();
 		agent.Warp(destination);
 		canMove = true;
+		
+	}
+	
+	void OnDrawGizmosSelected() 
+	{
+		Gizmos.color = Color.blue;
+		Gizmos.DrawWireSphere(transform.position, walkRadius);
 		
 	}
 }
