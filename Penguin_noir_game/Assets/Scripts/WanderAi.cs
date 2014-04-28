@@ -9,7 +9,9 @@ public class WanderAi : MonoBehaviour {
 	public float yRangeMin;
 	public float newSpotDistance;
 	public bool atDestination = false;
-	public float pauseTime;
+	public float maxWaitTime;
+	public float minWaitTime;
+	public GameObject player;
 	private float waitTime;
 	private NavMeshAgent agent;
 	// Use this for initialization
@@ -25,13 +27,22 @@ public class WanderAi : MonoBehaviour {
 	{
 		if (atDestination == false && agent.remainingDistance < newSpotDistance)
 		{
-			waitTime = Random.Range(1.5f,3f);
+			waitTime = Random.Range(minWaitTime,maxWaitTime);
 			Invoke("SetNewDestination",waitTime);
 			Debug.Log("pausing");
 			atDestination = true;
 			
 			
 		}
+		
+		if (Vector3.Distance(transform.position, player.transform.position) < 2)
+		{
+			agent.SetDestination(transform.position);
+		}
+//		else if (Vector3.Distance(transform.position, player.transform.position) > 2)
+//		{
+//			SetNewDestination();
+//		}
 	}
 	
 	void SetNewDestination ()

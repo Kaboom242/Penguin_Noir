@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour {
 			//iTweenEvent.GetEvent(gameObject, "Move").Play();
 		}
 
-		anim.SetFloat("Speed", agent.remainingDistance);
+		anim.SetFloat("Speed", agent.velocity.magnitude);
 //		if (agent.remainingDistance < 0.8f)
 //		{
 //			agent.Stop();
