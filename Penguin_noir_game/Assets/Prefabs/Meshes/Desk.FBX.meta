@@ -57,6 +57,7 @@ ModelImporter:
     2300026: Cylinder011
     2300028: Desk
     2300030: Plane002
+    2300032: //RootNode
     3300000: Box012
     3300002: Box013
     3300004: Box015
@@ -73,6 +74,7 @@ ModelImporter:
     3300026: Cylinder011
     3300028: Desk
     3300030: Plane002
+    3300032: //RootNode
     4300000: Desk
     4300002: Box012
     4300004: Cylinder003
@@ -108,7 +110,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: .100000001
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
