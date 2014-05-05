@@ -3,7 +3,9 @@ using System.Collections;
 
 public class AnimScript : MonoBehaviour {
 
-	private Animator annie;
+	public WanderAi WAi;
+	public Animator annie;
+	public GameObject Character;
 
 	public float timer;
 
@@ -14,7 +16,9 @@ public class AnimScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		annie = gameObject.GetComponent<Animator>();
+		annie = Character.GetComponent<Animator>();
+		WAi = gameObject.GetComponent<WanderAi>();
+	
 
 	}
 	
@@ -29,12 +33,14 @@ public class AnimScript : MonoBehaviour {
 			annie.SetInteger("SwitchPose", Random.Range(1, 8));
 		}
 
-		if (Input.GetKey (KeyCode.Space)) 
+		if (!WAi.atDestination) 
 		{
 			annie.SetBool("IsRunning", true);
+			Debug.Log("WALKING AROUND");
 		}else
 		{ 
 			annie.SetBool("IsRunning", false);
+			Debug.Log("Hangin Around");
 		}
 	}
 
