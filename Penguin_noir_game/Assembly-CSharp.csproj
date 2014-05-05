@@ -181,9 +181,11 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
      <Compile Include="Assets\Prefabs\AnimScript.cs" />
      <Compile Include="Assets\Scripts\Camera_movement.cs" />
+     <Compile Include="Assets\Scripts\Dialogue.cs" />
      <Compile Include="Assets\Scripts\Door.cs" />
      <Compile Include="Assets\Scripts\InGame_menu.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\StoryTrigger.cs" />
      <Compile Include="Assets\Scripts\WanderAi.cs" />
      <Compile Include="Assets\iTween\Plugins\iTween.cs" />
      <Compile Include="Assets\iTween\Sample\MoveSample.cs" />
