@@ -21,6 +21,8 @@ public class Dialogue : MonoBehaviour {
 			dialogue.Add ("I am a Penguin. Quack!");
 		dialogue.Add ("Dective Penguin:");
 			dialogue.Add ("I am here to solve a murder");
+		dialogue.Add ("Dective Penguin:");
+			dialogue.Add ("I am here to solve a murder for the sex");
 		#endregion 
 		//3
 

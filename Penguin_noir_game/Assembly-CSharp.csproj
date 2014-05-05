@@ -182,6 +182,7 @@
      <Compile Include="Assets\Prefabs\AnimScript.cs" />
      <Compile Include="Assets\Scripts\Camera_movement.cs" />
      <Compile Include="Assets\Scripts\Dialogue.cs" />
+     <Compile Include="Assets\Scripts\DialogueTextTrees.cs" />
      <Compile Include="Assets\Scripts\Door.cs" />
      <Compile Include="Assets\Scripts\InGame_menu.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
