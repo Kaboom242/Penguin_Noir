@@ -12,6 +12,8 @@ public class WanderAi : MonoBehaviour {
 	public float maxWaitTime;
 	public float minWaitTime;
 	public GameObject player;
+	public bool playerClose;
+	public GameObject charMesh;
 	private float waitTime;
 	private NavMeshAgent agent;
 	// Use this for initialization
@@ -38,7 +40,25 @@ public class WanderAi : MonoBehaviour {
 		if (Vector3.Distance(transform.position, player.transform.position) < 2)
 		{
 			agent.SetDestination(transform.position);
+			playerClose = true;
+			player.GetComponent<PlayerController>().AiClose(gameObject);
 		}
+		else {
+			playerClose = false;
+		}
+		
+			if (playerClose == true)
+		{
+			Vector3 lookDir;
+			lookDir =  Vector3.Lerp(charMesh.transform.forward, player.transform.position,Time.deltaTime);
+			charMesh.transform.LookAt(lookDir);
+		}
+		else if ( playerClose == false)
+		{
+			Quaternion.Lerp(charMesh.transform.rotation,gameObject.transform.rotation,Time.deltaTime);
+			//charMesh.transform.rotation = Quaternion.identity;
+		}
+		
 //		else if (Vector3.Distance(transform.position, player.transform.position) > 2)
 //		{
 //			SetNewDestination();

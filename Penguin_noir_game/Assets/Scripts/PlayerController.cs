@@ -12,6 +12,9 @@ public class PlayerController : MonoBehaviour {
 	NavMeshAgent agent;
 	Animator anim;
 	public GameObject character;
+	public GameObject currentAi;
+	public bool closeToAi;
+	public GameObject charMesh;
 	
 	// Use this for initialization
 	void Start () 
@@ -23,6 +26,11 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+		if (currentAi != null)
+		{
+			closeToAi = currentAi.GetComponent<WanderAi>().playerClose;
+		}
+		
 		if (Input.GetMouseButtonDown(0) && canMove == true)
 		{
 			RaycastHit hit;
@@ -46,10 +54,19 @@ public class PlayerController : MonoBehaviour {
 		{
 			agent.speed = walkSpeed;
 		}
-//		if (agent.remainingDistance < 0.8f)
-//		{
-//			agent.Stop();
-//		}
+
+		if (closeToAi == true)
+		{
+			Vector3 lookDir;
+			lookDir = Vector3.Lerp(charMesh.transform.forward, currentAi.transform.position,Time.deltaTime);
+			charMesh.transform.LookAt(lookDir);
+		}
+		else if ( closeToAi == false)
+		{
+			Quaternion.Lerp(charMesh.transform.rotation,gameObject.transform.rotation,Time.deltaTime);
+			//charMesh.transform.rotation = Quaternion.identity;
+		}
+
 		
 	
 	}
@@ -77,6 +94,11 @@ public class PlayerController : MonoBehaviour {
 		agent.Warp(destination);
 		canMove = true;
 		
+	}
+
+	public void AiClose (GameObject ai)
+	{
+		currentAi = ai;
 	}
 	
 	void OnDrawGizmosSelected() 
