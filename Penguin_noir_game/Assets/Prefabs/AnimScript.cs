@@ -36,11 +36,11 @@ public class AnimScript : MonoBehaviour {
 		if (!WAi.atDestination) 
 		{
 			annie.SetBool("IsRunning", true);
-			Debug.Log("WALKING AROUND");
+			//Debug.Log("WALKING AROUND");
 		}else
 		{ 
 			annie.SetBool("IsRunning", false);
-			Debug.Log("Hangin Around");
+			//Debug.Log("Hangin Around");
 		}
 	}
 
