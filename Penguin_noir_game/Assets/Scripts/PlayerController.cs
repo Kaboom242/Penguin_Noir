@@ -57,14 +57,15 @@ public class PlayerController : MonoBehaviour {
 
 		if (closeToAi == true)
 		{
-			Vector3 lookDir;
-			lookDir = Vector3.Lerp(charMesh.transform.forward, currentAi.transform.position,Time.deltaTime);
-			charMesh.transform.LookAt(lookDir);
+		
+			//Vector3 lookDir;
+			//lookDir = new Vector3(0, currentAi.transform.position.y, 0);
+			//charMesh.transform.LookAt (lookDir);
+			
 		}
 		else if ( closeToAi == false)
 		{
-			Quaternion.Lerp(charMesh.transform.rotation,gameObject.transform.rotation,Time.deltaTime);
-			//charMesh.transform.rotation = Quaternion.identity;
+
 		}
 
 		

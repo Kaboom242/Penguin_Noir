@@ -16,6 +16,8 @@ public class WanderAi : MonoBehaviour {
 	public GameObject charMesh;
 	private float waitTime;
 	private NavMeshAgent agent;
+	
+	
 	// Use this for initialization
 	void Start () 
 	{
@@ -47,15 +49,26 @@ public class WanderAi : MonoBehaviour {
 			playerClose = false;
 		}
 		
-			if (playerClose == true)
+		if (playerClose == true)
 		{
-			Vector3 lookDir;
-			lookDir =  Vector3.Lerp(charMesh.transform.forward, player.transform.position,Time.deltaTime);
-			charMesh.transform.LookAt(lookDir);
+		
+			charMesh.transform.rotation = Quaternion.Euler(new Vector3(0f, player.transform.rotation.y, 0f)); Quaternion.Slerp(charMesh.transform.rotation, player.transform.rotation , Time.deltaTime);
+		
+		
+		
+		
+		/*
+			Vector3 newLook;
+			
+			newLook = new Vector3(0, player.transform.position.y, 0);
+			
+			charMesh.transform.LookAt (newLook); 
+		*/
+				
 		}
 		else if ( playerClose == false)
 		{
-			Quaternion.Lerp(charMesh.transform.rotation,gameObject.transform.rotation,Time.deltaTime);
+			charMesh.transform.forward = Vector3.Slerp(charMesh.transform.forward, gameObject.transform.forward, Time.deltaTime);
 			//charMesh.transform.rotation = Quaternion.identity;
 		}
 		
