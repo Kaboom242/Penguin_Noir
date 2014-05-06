@@ -38,7 +38,6 @@ public class StoryTrigger : Dialogue {
 	void OnTriggerEnter(Collider other)
 	{
 		if(other.gameObject.tag == "Player"){
-			Debug.Log("I am Talking@!!!!");
 			StartCoroutine(SayWhat(NumSequance, play_x_Msg));
 		}
 	}
