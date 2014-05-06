@@ -15,16 +15,16 @@ public class StoryTrigger : Dialogue {
 	public int NumSequance;
 	public int play_x_Msg;
 
-	private  List<DialogueTextTrees> DialogueChoices;
+	public List<DialogueTextTrees> DialogueChoices;
 
 
 
 	void Start()
 	{
 		foreach(DialogueTextTrees d in this.gameObject.GetComponents<DialogueTextTrees>()){
-			DialogueChoices.Add(d);
+				DialogueChoices.Add(d);
 		}
-		diaBox = GameObject.Find ("Dialogue");
+		diaBox = GameObject.Find("Dialogue");
 		dia = diaBox.GetComponent("Dialogue") as Dialogue;
 	}
 	void Update()

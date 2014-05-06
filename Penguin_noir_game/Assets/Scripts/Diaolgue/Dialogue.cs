@@ -16,7 +16,7 @@ public class Dialogue : MonoBehaviour {
 		textbox = GameObject.Find ("Dialouge Text");
 		nameBox = GameObject.Find ("NameText");
 		#region Start game
-		//1 , 2
+		//1 , 3
 		dialogue.Add ("Dective Penguin:");
 			dialogue.Add ("I am a Penguin. Quack!");
 		dialogue.Add ("Dective Penguin:");
@@ -24,7 +24,7 @@ public class Dialogue : MonoBehaviour {
 		dialogue.Add ("Dective Penguin:");
 			dialogue.Add ("I am here to solve a murder for the sex");
 		#endregion 
-		//3
+		//4
 
 		 
 	}
