@@ -104,7 +104,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -319,8 +319,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Pose 2
       takeName: Take 001
-      firstFrame: 20
-      lastFrame: 39
+      firstFrame: 23
+      lastFrame: 36
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -430,8 +430,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Pose 3
       takeName: Take 001
-      firstFrame: 40
-      lastFrame: 59
+      firstFrame: 42
+      lastFrame: 58
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -541,8 +541,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Pose 4
       takeName: Take 001
-      firstFrame: 60
-      lastFrame: 79
+      firstFrame: 61
+      lastFrame: 78
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -652,8 +652,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Pose 5
       takeName: Take 001
-      firstFrame: 80
-      lastFrame: 99
+      firstFrame: 82
+      lastFrame: 97
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -763,8 +763,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Pose 6
       takeName: Take 001
-      firstFrame: 100
-      lastFrame: 119
+      firstFrame: 102
+      lastFrame: 118
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -874,8 +874,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Pose 7
       takeName: Take 001
-      firstFrame: 120
-      lastFrame: 139
+      firstFrame: 123
+      lastFrame: 137
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -985,8 +985,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Pose 8
       takeName: Take 001
-      firstFrame: 140
-      lastFrame: 159
+      firstFrame: 142
+      lastFrame: 157
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
