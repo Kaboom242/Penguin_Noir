@@ -33,7 +33,7 @@ public class WanderAi : MonoBehaviour {
 		{
 			waitTime = Random.Range(minWaitTime,maxWaitTime);
 			Invoke("SetNewDestination",waitTime);
-			Debug.Log("pausing");
+			//Debug.Log("pausing");
 			atDestination = true;
 			
 			
