@@ -33,7 +33,7 @@ public class Dialogue : MonoBehaviour {
 		InpuText (dialogue[i-1], dialogue[i]);
 		TweenAlpha twnpos = dialogueBox.GetComponent("TweenAlpha") as TweenAlpha; 
 		isTalking = true;
-		twnpos.PlayForward();
+		twnpos.PlayReverse();
 	}
 	void InpuText(string name, string body)
 	{
