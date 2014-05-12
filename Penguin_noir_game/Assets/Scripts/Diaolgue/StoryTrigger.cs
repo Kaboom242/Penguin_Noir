@@ -32,13 +32,14 @@ public class StoryTrigger : Dialogue {
 		if (Input.GetKey (KeyCode.Space)) {
 			TweenAlpha tweenpos = diaBox.GetComponent("TweenAlpha") as TweenAlpha;
 			dia.isTalking = false;
-			tweenpos.PlayReverse();	
+			tweenpos.PlayForward();	
 		}
 	}
 	void OnTriggerEnter(Collider other)
 	{
 		if(other.gameObject.tag == "Player"){
 			StartCoroutine(SayWhat(NumSequance, play_x_Msg));
+			print ("Hello Trigger");
 		}
 	}
 	
@@ -54,7 +55,7 @@ public class StoryTrigger : Dialogue {
 			i = i + 1;
 		}
 		//show Dialogue Tree
-		/*  Just Show the Dialogue Buttons and have them play thge SayWhat and reshow the Dialogue Buttons
+		/*  Just Show the Dialogue Buttons and have them play the SayWhat and reshow the Dialogue Buttons
 		 * 
 		 * 
 		if (DialogueChoices.ToArray ().Length > 0) {
