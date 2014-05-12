@@ -52,7 +52,8 @@ public class WanderAi : MonoBehaviour {
 		if (playerClose == true)
 		{
 		
-			charMesh.transform.rotation = Quaternion.Euler(new Vector3(0f, player.transform.rotation.y, 0f)); Quaternion.Slerp(charMesh.transform.rotation, player.transform.rotation , Time.deltaTime);
+			charMesh.transform.rotation = Quaternion.Euler(new Vector3(0f, player.transform.rotation.y, 0f));
+			Quaternion.Slerp(charMesh.transform.rotation, player.transform.rotation , Time.deltaTime);
 		
 		
 		

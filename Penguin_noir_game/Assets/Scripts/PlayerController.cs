@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour {
 	public GameObject currentAi;
 	public bool closeToAi;
 	public GameObject charMesh;
+	private bool clickedButton;
 	
 	// Use this for initialization
 	void Start () 
@@ -108,4 +109,12 @@ public class PlayerController : MonoBehaviour {
 		Gizmos.DrawWireSphere(transform.position, walkRadius);
 		
 	}
+
+	public void ClickedButton ()
+	{
+		agent.SetDestination (transform.position);
+
+
+	}
+	
 }
