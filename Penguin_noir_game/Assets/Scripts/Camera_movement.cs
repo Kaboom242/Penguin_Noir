@@ -10,7 +10,7 @@ public class Camera_movement : MonoBehaviour {
 	private Quaternion originRotation;
 	public float shake_decay;
 	float shake_intensity;
-	public float ShakeIT = .04f;
+	public float ShakeIT = .02f;
 	public GameObject player;
 	private bool isInside = false;
 	private Vector3 teleportTo;
@@ -56,11 +56,11 @@ public class Camera_movement : MonoBehaviour {
 			shake_intensity -= shake_decay;
 		}
 	}
-	
-	void Shake(){
+
+	public void Shake(){
 		originPosition = transform.position;
 		originRotation = transform.rotation;
-		shake_decay = 0.002f;
+		shake_decay = 0.001f;
 		shake_intensity = ShakeIT;
 	}
 	

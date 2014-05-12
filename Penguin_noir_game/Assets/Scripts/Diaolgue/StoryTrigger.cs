@@ -16,7 +16,7 @@ public class StoryTrigger : Dialogue {
 	public int play_x_Msg;
 
 	public List<DialogueTextTrees> DialogueChoices;
-
+	Camera_movement camMov;
 
 
 	void Start()
@@ -24,6 +24,7 @@ public class StoryTrigger : Dialogue {
 		foreach(DialogueTextTrees d in this.gameObject.GetComponents<DialogueTextTrees>()){
 				DialogueChoices.Add(d);
 		}
+		camMov = Camera.main.GetComponent("Camera_movement") as Camera_movement;
 		diaBox = GameObject.Find("Dialogue");
 		dia = diaBox.GetComponent("Dialogue") as Dialogue;
 	}
@@ -32,6 +33,7 @@ public class StoryTrigger : Dialogue {
 		if (Input.GetKey (KeyCode.Space)) {
 			TweenAlpha tweenpos = diaBox.GetComponent("TweenAlpha") as TweenAlpha;
 			dia.isTalking = false;
+			camMov.Shake();
 			tweenpos.PlayForward();	
 		}
 	}
