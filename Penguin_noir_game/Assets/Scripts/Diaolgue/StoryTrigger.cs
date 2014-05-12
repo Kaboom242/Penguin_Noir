@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class StoryTrigger : Dialogue {
+public class StoryTrigger : MonoBehaviour {
 
 	public Dialogue dia;
 	public GameObject diaBox;
@@ -58,8 +58,7 @@ public class StoryTrigger : Dialogue {
 		}
 		//show Dialogue Tree
 		/*  Just Show the Dialogue Buttons and have them play the SayWhat and reshow the Dialogue Buttons
-		 * 
-		 * 
+
 		if (DialogueChoices.ToArray ().Length > 0) {
 			if(treeIndex - 1 > DialogueChoices.ToArray ().Length)
 			{
