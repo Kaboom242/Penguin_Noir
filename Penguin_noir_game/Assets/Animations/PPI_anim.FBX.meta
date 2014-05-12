@@ -46,6 +46,52 @@ ModelImporter:
     100080: ApeSpine2
     100082: Box002
     100084: //RootNode
+    100086: PPI_Mesh
+    100088: PPI_Rig
+    100090: PPI_RigHead
+    100092: PPI_RigLArm1
+    100094: PPI_RigLArm2
+    100096: PPI_RigLArmCollarbone
+    100098: PPI_RigLArmDigit11
+    100100: PPI_RigLArmDigit12
+    100102: PPI_RigLArmDigit21
+    100104: PPI_RigLArmDigit22
+    100106: PPI_RigLArmDigit23
+    100108: PPI_RigLArmDigit31
+    100110: PPI_RigLArmDigit32
+    100112: PPI_RigLArmDigit33
+    100114: PPI_RigLArmPalm
+    100116: PPI_RigLLeg1
+    100118: PPI_RigLLeg2
+    100120: PPI_RigLLegDigit01
+    100122: PPI_RigLLegPalm
+    100124: PPI_RigLLegPlatform
+    100126: PPI_RigNeck
+    100128: PPI_RigPelvis
+    100130: PPI_RigRArm1
+    100132: PPI_RigRArm2
+    100134: PPI_RigRArmCollarbone
+    100136: PPI_RigRArmDigit11
+    100138: PPI_RigRArmDigit12
+    100140: PPI_RigRArmDigit21
+    100142: PPI_RigRArmDigit22
+    100144: PPI_RigRArmDigit23
+    100146: PPI_RigRArmDigit31
+    100148: PPI_RigRArmDigit32
+    100150: PPI_RigRArmDigit33
+    100152: PPI_RigRArmPalm
+    100154: PPI_RigRibcage
+    100156: PPI_RigRLeg1
+    100158: PPI_RigRLeg2
+    100160: PPI_RigRLegDigit01
+    100162: PPI_RigRLegPalm
+    100164: PPI_RigRLegPlatform
+    100166: PPI_RigSpine1
+    100168: PPI_RigSpine2
+    100170: PPI_RigRArmDigit1231
+    100172: PPI_RigRArmDigit1232
+    100174: PPI_RigRArmDigit123r1r
+    100176: PPI_RigRArmDigit123r2r
     400000: Ape
     400002: ApeHead
     400004: ApeLArm1
@@ -89,11 +135,62 @@ ModelImporter:
     400080: ApeSpine2
     400082: Box002
     400084: //RootNode
+    400086: PPI_Mesh
+    400088: PPI_Rig
+    400090: PPI_RigHead
+    400092: PPI_RigLArm1
+    400094: PPI_RigLArm2
+    400096: PPI_RigLArmCollarbone
+    400098: PPI_RigLArmDigit11
+    400100: PPI_RigLArmDigit12
+    400102: PPI_RigLArmDigit21
+    400104: PPI_RigLArmDigit22
+    400106: PPI_RigLArmDigit23
+    400108: PPI_RigLArmDigit31
+    400110: PPI_RigLArmDigit32
+    400112: PPI_RigLArmDigit33
+    400114: PPI_RigLArmPalm
+    400116: PPI_RigLLeg1
+    400118: PPI_RigLLeg2
+    400120: PPI_RigLLegDigit01
+    400122: PPI_RigLLegPalm
+    400124: PPI_RigLLegPlatform
+    400126: PPI_RigNeck
+    400128: PPI_RigPelvis
+    400130: PPI_RigRArm1
+    400132: PPI_RigRArm2
+    400134: PPI_RigRArmCollarbone
+    400136: PPI_RigRArmDigit11
+    400138: PPI_RigRArmDigit12
+    400140: PPI_RigRArmDigit21
+    400142: PPI_RigRArmDigit22
+    400144: PPI_RigRArmDigit23
+    400146: PPI_RigRArmDigit31
+    400148: PPI_RigRArmDigit32
+    400150: PPI_RigRArmDigit33
+    400152: PPI_RigRArmPalm
+    400154: PPI_RigRibcage
+    400156: PPI_RigRLeg1
+    400158: PPI_RigRLeg2
+    400160: PPI_RigRLegDigit01
+    400162: PPI_RigRLegPalm
+    400164: PPI_RigRLegPlatform
+    400166: PPI_RigSpine1
+    400168: PPI_RigSpine2
+    400170: PPI_RigRArmDigit1231
+    400172: PPI_RigRArmDigit1232
+    400174: PPI_RigRArmDigit123r1r
+    400176: PPI_RigRArmDigit123r2r
+    2300000: PPI_Mesh
+    3300000: PPI_Mesh
     4300000: Box002
+    4300002: PPI_Mesh
     7400000: Idle
     7400002: Walk
+    7400004: Run
     9500000: //RootNode
     13700000: Box002
+    13700002: PPI_Mesh
   materials:
     importMaterials: 1
     materialName: 0
@@ -102,7 +199,7 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
@@ -232,7 +329,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       loopTime: 1
-      loopBlend: 0
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -333,6 +430,118 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 56
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: PPI_Mesh
+        weight: 0
+      - path: PPI_Rig
+        weight: 0
+      - path: PPI_RigLLegPlatform
+        weight: 0
+      - path: PPI_RigPelvis
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigLLeg1
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigLLeg1/PPI_RigLLeg2
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigLLeg1/PPI_RigLLeg2/PPI_RigLLegPalm
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigLLeg1/PPI_RigLLeg2/PPI_RigLLegPalm/PPI_RigLLegDigit01
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigRLeg1
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigRLeg1/PPI_RigRLeg2
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigRLeg1/PPI_RigRLeg2/PPI_RigRLegPalm
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigRLeg1/PPI_RigRLeg2/PPI_RigRLegPalm/PPI_RigRLegDigit01
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigLArmCollarbone
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigLArmCollarbone/PPI_RigLArm1
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigLArmCollarbone/PPI_RigLArm1/PPI_RigLArm2
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigLArmCollarbone/PPI_RigLArm1/PPI_RigLArm2/PPI_RigLArmPalm
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigLArmCollarbone/PPI_RigLArm1/PPI_RigLArm2/PPI_RigLArmPalm/PPI_RigLArmDigit11
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigLArmCollarbone/PPI_RigLArm1/PPI_RigLArm2/PPI_RigLArmPalm/PPI_RigLArmDigit11/PPI_RigLArmDigit12
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigLArmCollarbone/PPI_RigLArm1/PPI_RigLArm2/PPI_RigLArmPalm/PPI_RigLArmDigit21
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigLArmCollarbone/PPI_RigLArm1/PPI_RigLArm2/PPI_RigLArmPalm/PPI_RigLArmDigit21/PPI_RigLArmDigit22
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigLArmCollarbone/PPI_RigLArm1/PPI_RigLArm2/PPI_RigLArmPalm/PPI_RigLArmDigit21/PPI_RigLArmDigit22/PPI_RigLArmDigit23
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigLArmCollarbone/PPI_RigLArm1/PPI_RigLArm2/PPI_RigLArmPalm/PPI_RigLArmDigit31
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigLArmCollarbone/PPI_RigLArm1/PPI_RigLArm2/PPI_RigLArmPalm/PPI_RigLArmDigit31/PPI_RigLArmDigit32
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigLArmCollarbone/PPI_RigLArm1/PPI_RigLArm2/PPI_RigLArmPalm/PPI_RigLArmDigit31/PPI_RigLArmDigit32/PPI_RigLArmDigit33
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigNeck
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigNeck/PPI_RigHead
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigRArmCollarbone
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigRArmCollarbone/PPI_RigRArm1
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigRArmCollarbone/PPI_RigRArm1/PPI_RigRArm2
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigRArmCollarbone/PPI_RigRArm1/PPI_RigRArm2/PPI_RigRArmPalm
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigRArmCollarbone/PPI_RigRArm1/PPI_RigRArm2/PPI_RigRArmPalm/PPI_RigRArmDigit11
+        weight: 0
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigRArmCollarbone/PPI_RigRArm1/PPI_RigRArm2/PPI_RigRArmPalm/PPI_RigRArmDigit11/PPI_RigRArmDigit12
+        weight: 0
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigRArmCollarbone/PPI_RigRArm1/PPI_RigRArm2/PPI_RigRArmPalm/PPI_RigRArmDigit21
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigRArmCollarbone/PPI_RigRArm1/PPI_RigRArm2/PPI_RigRArmPalm/PPI_RigRArmDigit21/PPI_RigRArmDigit22
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigRArmCollarbone/PPI_RigRArm1/PPI_RigRArm2/PPI_RigRArmPalm/PPI_RigRArmDigit21/PPI_RigRArmDigit22/PPI_RigRArmDigit23
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigRArmCollarbone/PPI_RigRArm1/PPI_RigRArm2/PPI_RigRArmPalm/PPI_RigRArmDigit31
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigRArmCollarbone/PPI_RigRArm1/PPI_RigRArm2/PPI_RigRArmPalm/PPI_RigRArmDigit31/PPI_RigRArmDigit32
+        weight: 1
+      - path: PPI_RigPelvis/PPI_RigSpine1/PPI_RigSpine2/PPI_RigRibcage/PPI_RigRArmCollarbone/PPI_RigRArm1/PPI_RigRArm2/PPI_RigRArmPalm/PPI_RigRArmDigit31/PPI_RigRArmDigit32/PPI_RigRArmDigit33
+        weight: 1
+      - path: PPI_RigRLegPlatform
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -357,8 +566,519 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    human: []
-    skeleton: []
+    human:
+    - boneName: PPI_RigPelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigLLeg1
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigRLeg1
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigLLeg2
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigRLeg2
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigLLegPalm
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigRLegPalm
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigSpine2
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigRibcage
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigNeck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigHead
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigLArmCollarbone
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigRArmCollarbone
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigLArm1
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigRArm1
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigLArm2
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigRArm2
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigLArmPalm
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigRArmPalm
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigLLegDigit01
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigRLegDigit01
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigLArmDigit11
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigLArmDigit12
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigLArmDigit21
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigLArmDigit22
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigLArmDigit23
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigLArmDigit31
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigLArmDigit32
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigLArmDigit33
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigRArmDigit1231
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigRArmDigit1232
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigRArmDigit21
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigRArmDigit22
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigRArmDigit23
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigRArmDigit31
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigRArmDigit32
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PPI_RigRArmDigit33
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: PPI_anim(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PPI_Mesh
+      position: {x: 0, y: .219593123, z: 0}
+      rotation: {x: -.5, y: .5, z: .5, w: .5}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PPI_Rig
+      position: {x: 0, y: 0, z: .234712362}
+      rotation: {x: .50000006, y: -.50000006, z: -.49999994, w: .49999994}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PPI_RigLLegPlatform
+      position: {x: -.197333843, y: -4.3894854e-08, z: .0608633608}
+      rotation: {x: .594051421, y: -.594051421, z: -.383540064, w: .383540064}
+      scale: {x: 1, y: .999999881, z: .999999881}
+      transformModified: 1
+    - name: PPI_RigPelvis
+      position: {x: 1.51633817e-08, y: .439947993, z: .0349386334}
+      rotation: {x: .573572159, y: -.413539678, z: -.573572099, w: .413539588}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PPI_RigLLeg1
+      position: {x: .0482772738, y: -.0207486525, z: .141087547}
+      rotation: {x: .253810883, y: -.923450828, z: -.287556261, w: .011403488}
+      scale: {x: 1.00000036, y: 1.00000012, z: .999999762}
+      transformModified: 1
+    - name: PPI_RigLLeg2
+      position: {x: -.185732976, y: 1.06811524e-06, z: -1.08718871e-06}
+      rotation: {x: -.268491924, y: -.112182669, z: .262571961, w: .919990838}
+      scale: {x: 1.00000095, y: 1.00000024, z: .999999166}
+      transformModified: 1
+    - name: PPI_RigLLegPalm
+      position: {x: -.187703848, y: 0, z: 0}
+      rotation: {x: -.20747833, y: -.330084085, z: .734231889, w: -.555788577}
+      scale: {x: 1.0000006, y: .999999464, z: .999999642}
+      transformModified: 1
+    - name: PPI_RigLLegDigit01
+      position: {x: -.226279527, y: 0, z: 0}
+      rotation: {x: .0318013243, y: -.00606340403, z: .0980536938, w: .994654417}
+      scale: {x: 1, y: 1, z: .99999994}
+      transformModified: 1
+    - name: PPI_RigRLeg1
+      position: {x: .0482772738, y: -.0207486916, z: -.141087562}
+      rotation: {x: .253811091, y: -.923474669, z: .28748104, w: -.0113657769}
+      scale: {x: 1.0000006, y: 1.00000012, z: .999999881}
+      transformModified: 1
+    - name: PPI_RigRLeg2
+      position: {x: -.185732991, y: 9.53674316e-07, z: 8.01086401e-07}
+      rotation: {x: .244506359, y: .11206913, z: .26738739, w: .92528981}
+      scale: {x: 1.00000298, y: 1.00000143, z: .999996543}
+      transformModified: 1
+    - name: PPI_RigRLegPalm
+      position: {x: -.226521417, y: 4.76837148e-09, z: 0}
+      rotation: {x: -.188947991, y: -.31611231, z: -.743713617, w: .557908475}
+      scale: {x: 1.00000262, y: .999998987, z: .999998927}
+      transformModified: 1
+    - name: PPI_RigRLegDigit01
+      position: {x: -.226279438, y: 2.98023217e-10, z: 9.53674295e-09}
+      rotation: {x: -.0317815095, y: .00627258979, z: .0982761234, w: .994631827}
+      scale: {x: 1.00000012, y: .99999994, z: 1}
+      transformModified: 1
+    - name: PPI_RigSpine1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 9.60692592e-09, y: -1.12436043e-08, z: .0450821444, w: .998983324}
+      scale: {x: .99999994, y: 1, z: .99999994}
+      transformModified: 1
+    - name: PPI_RigSpine2
+      position: {x: -.342467695, y: 1.90734859e-08, z: 0}
+      rotation: {x: 9.25407928e-09, y: 1.94919423e-08, z: .112523168, w: .993649125}
+      scale: {x: 1.00000012, y: 1.00000012, z: .99999994}
+      transformModified: 1
+    - name: PPI_RigRibcage
+      position: {x: -.342467755, y: 9.53674295e-09, z: -4.54747341e-15}
+      rotation: {x: 1.18074208e-08, y: 3.34584733e-08, z: -.123597242, w: .992332518}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1.00000024}
+      transformModified: 1
+    - name: PPI_RigLArmCollarbone
+      position: {x: -.0274415575, y: .1422894, z: .123331107}
+      rotation: {x: .0704602003, y: .756177366, z: .119862273, w: .63942492}
+      scale: {x: .999999821, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: PPI_RigLArm1
+      position: {x: -.124711893, y: -9.53674295e-09, z: 0}
+      rotation: {x: .223175406, y: -.0841443837, z: -.116126195, w: .964171767}
+      scale: {x: 1.00000143, y: 1.00000024, z: .999998748}
+      transformModified: 1
+    - name: PPI_RigLArm2
+      position: {x: -.241367713, y: 0, z: -3.81469718e-08}
+      rotation: {x: -.165069997, y: -.0228459444, z: -.0211677719, w: .985789955}
+      scale: {x: 1.00000203, y: .999999702, z: .999998808}
+      transformModified: 1
+    - name: PPI_RigLArmPalm
+      position: {x: -.243495017, y: 0, z: 0}
+      rotation: {x: -.717745483, y: -.0997795984, z: .230681121, w: .649362564}
+      scale: {x: 1.00000501, y: .999998391, z: .999996841}
+      transformModified: 1
+    - name: PPI_RigLArmDigit11
+      position: {x: -.0497988127, y: -.00121318817, z: .0781201348}
+      rotation: {x: .530550182, y: .181139052, z: -.0240159035, w: .827724814}
+      scale: {x: 1.00000215, y: .999998868, z: .999999106}
+      transformModified: 1
+    - name: PPI_RigLArmDigit12
+      position: {x: -.0696745664, y: 0, z: 1.90734859e-08}
+      rotation: {x: 1.4901163e-08, y: 5.55113577e-16, z: 3.7253038e-08, w: 1}
+      scale: {x: .999996424, y: .999999881, z: 1.00000405}
+      transformModified: 1
+    - name: PPI_RigLArmDigit21
+      position: {x: -.182889253, y: -.00632663723, z: .0503695086}
+      rotation: {x: -.021192614, y: .0820039734, z: .0770409182, w: .99342382}
+      scale: {x: 1.00000489, y: .999995351, z: 1.00000012}
+      transformModified: 1
+    - name: PPI_RigLArmDigit22
+      position: {x: -.0419645309, y: 0, z: 1.90734859e-08}
+      rotation: {x: 9.31325861e-09, y: -2.23516565e-08, z: -2.98022087e-08, w: 1}
+      scale: {x: 1.00000381, y: .999996424, z: .99999994}
+      transformModified: 1
+    - name: PPI_RigLArmDigit23
+      position: {x: -.0419645682, y: 0, z: 0}
+      rotation: {x: 3.72530318e-09, y: -2.23516601e-08, z: -1.49011061e-08, w: 1}
+      scale: {x: 1.0000037, y: .999996424, z: .99999994}
+      transformModified: 1
+    - name: PPI_RigLArmDigit31
+      position: {x: -.186368063, y: -.00762222288, z: -.0249815173}
+      rotation: {x: -.0120040374, y: .0819070563, z: .0753186047, w: .993717432}
+      scale: {x: 1.00000525, y: .99999547, z: 1.00000024}
+      transformModified: 1
+    - name: PPI_RigLArmDigit32
+      position: {x: -.0395547077, y: 0, z: 0}
+      rotation: {x: 1.86265208e-08, y: 0, z: -0, w: 1}
+      scale: {x: 1.00000381, y: .999996305, z: .999999702}
+      transformModified: 1
+    - name: PPI_RigLArmDigit33
+      position: {x: -.0395547487, y: 3.81469718e-08, z: 0}
+      rotation: {x: -1.86265203e-09, y: 7.45055129e-09, z: 1.38777845e-17, w: 1}
+      scale: {x: 1.00000393, y: .999996305, z: .999999762}
+      transformModified: 1
+    - name: PPI_RigNeck
+      position: {x: -.0392395779, y: -.0358169265, z: -1.71522507e-09}
+      rotation: {x: 3.83571681e-08, y: -3.01322594e-08, z: -.125221297, w: .992128849}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: PPI_RigHead
+      position: {x: -.295021266, y: -3.81469718e-08, z: 1.81898936e-14}
+      rotation: {x: 5.58215234e-08, y: -9.03513993e-08, z: -.550810456, w: .83463043}
+      scale: {x: 1, y: .99999994, z: 1}
+      transformModified: 1
+    - name: PPI_RigRArmCollarbone
+      position: {x: -.0274414811, y: .1422894, z: -.123331092}
+      rotation: {x: -.0704600736, y: -.756177187, z: .119862609, w: .639425099}
+      scale: {x: 1.00000024, y: .99999994, z: .999999881}
+      transformModified: 1
+    - name: PPI_RigRArm1
+      position: {x: -.124711856, y: 9.53674295e-09, z: 0}
+      rotation: {x: -.234556288, y: .0853145719, z: -.114634976, w: .961542308}
+      scale: {x: .999998748, y: 1.00000024, z: 1.00000119}
+      transformModified: 1
+    - name: PPI_RigRArm2
+      position: {x: -.241367638, y: 0, z: 0}
+      rotation: {x: .140407324, y: .0241105463, z: -.0192158483, w: .989613652}
+      scale: {x: .999997854, y: 1.00000095, z: 1.00000083}
+      transformModified: 1
+    - name: PPI_RigRArmPalm
+      position: {x: -.243494987, y: 3.81469718e-08, z: 0}
+      rotation: {x: .695725977, y: .0913006291, z: .23320964, w: .673233211}
+      scale: {x: .999995053, y: 1.00000322, z: 1.00000298}
+      transformModified: 1
+    - name: PPI_RigRArmDigit21
+      position: {x: -.182888478, y: -.00632659905, z: -.0503697768}
+      rotation: {x: .0211934, y: -.0820073262, z: .0770376772, w: .99342382}
+      scale: {x: .999995232, y: 1.00000513, z: 1.00000095}
+      transformModified: 1
+    - name: PPI_RigRArmDigit22
+      position: {x: -.0419645682, y: 3.81469718e-08, z: 1.90734859e-08}
+      rotation: {x: -3.9115406e-08, y: 3.72530486e-08, z: -6.70554812e-08, w: 1}
+      scale: {x: .999996185, y: 1.00000358, z: 1.00000083}
+      transformModified: 1
+    - name: PPI_RigRArmDigit23
+      position: {x: -.0419645682, y: 3.81469718e-08, z: 1.90734859e-08}
+      rotation: {x: 5.58791946e-09, y: -5.96048721e-08, z: 6.70554812e-08, w: 1}
+      scale: {x: .999996185, y: 1.00000358, z: 1.0000006}
+      transformModified: 1
+    - name: PPI_RigRArmDigit31
+      position: {x: -.186367273, y: -.0076221847, z: .0249816421}
+      rotation: {x: .0120053319, y: -.0819110945, z: .0753137767, w: .993717372}
+      scale: {x: .999995291, y: 1.00000501, z: 1.00000107}
+      transformModified: 1
+    - name: PPI_RigRArmDigit32
+      position: {x: -.0395547077, y: 3.81469718e-08, z: 0}
+      rotation: {x: 9.12693068e-08, y: -2.23518342e-08, z: 3.72530664e-08, w: 1}
+      scale: {x: .999995708, y: 1.00000334, z: 1.00000048}
+      transformModified: 1
+    - name: PPI_RigRArmDigit33
+      position: {x: -.0395547077, y: 3.81469718e-08, z: -9.53674295e-09}
+      rotation: {x: 1.49011159e-08, y: 5.96048935e-08, z: -1.04308562e-07, w: 1}
+      scale: {x: .999995828, y: 1.00000346, z: 1.0000006}
+      transformModified: 1
+    - name: PPI_RigRArmDigit1231
+      position: {x: -.0497985817, y: -.00121314998, z: -.0781205148}
+      rotation: {x: -.530552328, y: -.181137204, z: -.0240185875, w: .827723801}
+      scale: {x: .999997556, y: 1.0000025, z: 1.00000131}
+      transformModified: 1
+    - name: PPI_RigRArmDigit1232
+      position: {x: -.0696746036, y: 3.81469718e-08, z: 3.81469718e-08}
+      rotation: {x: -1.49011594e-08, y: -2.98022194e-08, z: -5.96044387e-08, w: 1}
+      scale: {x: 1.00000346, y: 1.00000024, z: .999996126}
+      transformModified: 1
+    - name: PPI_RigRLegPlatform
+      position: {x: .197333887, y: -4.38948646e-08, z: .0608634353}
+      rotation: {x: .383540094, y: -.383540094, z: -.594051361, w: .594051361}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
     armTwist: .5
     foreArmTwist: .5
     upperLegTwist: .5
@@ -368,5 +1088,5 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 3
   userData: 
