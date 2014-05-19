@@ -6,7 +6,14 @@ public class Cig : MonoBehaviour {
 	public float duration = 1.0F;
 	public Color color0;
 	public Color color1;
-	public  bool canDrag;
+	public ParticleSystem smoke;
+	private bool canDrag;
+	private bool lerpBack = false;
+	private bool lerpForward;
+	private Vector4 color0Vec;
+	private Vector4 color1Vec;
+	private Vector4 lightColor;
+	private float t = 0;
 
 	void Start()
 	{
@@ -14,22 +21,55 @@ public class Cig : MonoBehaviour {
 	}
 	void Update() 
 	{
+		color0Vec = color0;
+		color1Vec = color1;
+		lightColor = light.color;
 		if (canDrag == true)
 		{
-			float t = Mathf.PingPong(Time.time, duration) / duration;
-			light.color = Color.Lerp(color0, color1, t);
-			if (light.color == color1)
+
+
+
+			if (lerpForward == true)
 			{
-				canDrag = false;
+				t += Time.deltaTime;
+				light.color = Color.Lerp(color0, color1, t * 0.5f);
+				if (lightColor.x > 0.6f)
+				{
+					print ("switch");
+					lerpBack = true;
+					lerpForward = false;
+					t = 0;
+					smoke.Play();
+				}
 			}
+
+			if (lerpBack == true)
+			{
+				t += Time.deltaTime;
+				print ("back");
+
+				light.color = Color.Lerp(color1, color0, t * 0.5f);
+				if (lightColor.x < 0.15f)
+				{
+					print (lightColor.x);
+					print("done");
+					lerpBack = false;
+					canDrag = false;
+					t = 0;
+				}
+			}
+
 		}
 	}
 
 	void Drag()
 	{
 		print ("Drag");
+		t = 0;
 		canDrag = true;
-		Invoke ("Drag", Random.Range (10, 20));
+		lerpForward = true;
+		smoke.Stop ();
+		Invoke ("Drag", Random.Range (10, 15));
 	}
 
 }
