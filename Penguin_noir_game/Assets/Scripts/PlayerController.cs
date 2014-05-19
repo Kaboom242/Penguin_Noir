@@ -75,16 +75,16 @@ public class PlayerController : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider collider)
 	{
-		if (collider.gameObject.name == "Teleport")
+		if (collider.gameObject.tag == "Teleport")
 		{
 			canMove = false;
-			cam.GetComponent<Camera_movement>().FadeOut(new Vector3 (-77, gameObject.transform.position.y,16.8f));
+			cam.GetComponent<Camera_movement>().FadeOut(new Vector3 (collider.transform.position.x,collider.transform.position.y,collider.transform.position.z + 38));
 			
 		}
-		if (collider.gameObject.name == "TeleportBack")
+		if (collider.gameObject.tag == "TeleportBack")
 		{
 			canMove = false;
-			cam.GetComponent<Camera_movement>().FadeOut(new Vector3 (-34, gameObject.transform.position.y,23));
+			cam.GetComponent<Camera_movement>().FadeOut(new Vector3 (collider.transform.position.x,collider.transform.position.y,collider.transform.position.z - 38));
 			
 		}
 	}
