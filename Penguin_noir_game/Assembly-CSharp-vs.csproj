@@ -187,6 +187,7 @@
      <Compile Include="Assets\Scripts\Diaolgue\StoryTrigger.cs" />
      <Compile Include="Assets\Scripts\Door.cs" />
      <Compile Include="Assets\Scripts\InGame_menu.cs" />
+     <Compile Include="Assets\Scripts\LightFlicker.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\RotateCharConvo.cs" />
      <Compile Include="Assets\Scripts\WanderAi.cs" />
