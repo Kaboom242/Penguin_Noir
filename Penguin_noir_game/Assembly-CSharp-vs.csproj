@@ -188,11 +188,8 @@
      <Compile Include="Assets\Scripts\Door.cs" />
      <Compile Include="Assets\Scripts\InGame_menu.cs" />
      <Compile Include="Assets\Scripts\LightFlicker.cs" />
-<<<<<<< HEAD
-     <Compile Include="Assets\Scripts\MouseClickBurst.cs" />
-=======
      <Compile Include="Assets\Scripts\LoadLevel.cs" />
->>>>>>> be49e665da3279386a6feb10f8d4f6424b6de37e
+     <Compile Include="Assets\Scripts\MouseClickBurst.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\RotateCharConvo.cs" />
      <Compile Include="Assets\Scripts\WanderAi.cs" />
