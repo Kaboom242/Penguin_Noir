@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour {
 	public bool closeToAi;
 	public GameObject charMesh;
 	private bool clickedButton;
+
 	
 	// Use this for initialization
 	void Start () 
@@ -32,13 +33,13 @@ public class PlayerController : MonoBehaviour {
 		{
 			closeToAi = currentAi.GetComponent<WanderAi>().playerClose;
 		}
-		
+
 		if (Input.GetMouseButtonDown(0) && canMove == true)
 		{
 			RaycastHit hit;
 			if (!Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition),  out hit, 100))
-				return;
-				newLoc = new Vector3 (hit.point.x, transform.position.y, hit.point.z);
+			return;
+			newLoc = new Vector3 (hit.point.x, transform.position.y, hit.point.z);
 			ParticleSystem clone;
 			clone = Instantiate(ClickPS, newLoc, transform.rotation) as ParticleSystem;
 				
