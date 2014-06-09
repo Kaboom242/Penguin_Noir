@@ -190,10 +190,6 @@
      <Compile Include="Assets\Scripts\InGame_menu.cs" />
      <Compile Include="Assets\Scripts\LightFlicker.cs" />
      <Compile Include="Assets\Scripts\LoadLevel.cs" />
-<<<<<<< HEAD
-     <Compile Include="Assets\Scripts\MouseClickBurst.cs" />
-=======
->>>>>>> f375185b3a35d282a54d779e15da4191813d3e39
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\RotateCharConvo.cs" />
      <Compile Include="Assets\Scripts\WanderAi.cs" />
