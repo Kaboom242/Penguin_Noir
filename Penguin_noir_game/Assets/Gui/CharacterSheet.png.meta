@@ -1,0 +1,99 @@
+fileFormatVersion: 2
+guid: 4df2a85ebbbede643a59a41acd92ccc2
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: CharacterSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 468
+        width: 637
+        height: 2082
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: CharacterSheet_1
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 519
+        width: 683
+        height: 2002
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: CharacterSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 1480
+        width: 1166
+        height: 1070
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: CharacterSheet_3
+      rect:
+        serializedVersion: 2
+        x: 2767
+        y: 1627
+        width: 796
+        height: 909
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: CharacterSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 0
+        width: 1129
+        height: 1390
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: CharacterSheet_5
+      rect:
+        serializedVersion: 2
+        x: 2649
+        y: 0
+        width: 976
+        height: 1573
+      alignment: 0
+      pivot: {x: .5, y: .5}
+  spritePackingTag: 
+  userData: 
