@@ -2,12 +2,13 @@
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
+	public ParticleSystem ClickPS;
 	public Camera cam;
 	public GameObject moveTarget;
 	public float sprintSpeed;
 	public float walkSpeed;
 	public float walkRadius;
-	private Vector3 newLoc;
+	public Vector3 newLoc;
 	private bool canMove = true;
 	NavMeshAgent agent;
 	Animator anim;
@@ -38,6 +39,8 @@ public class PlayerController : MonoBehaviour {
 			if (!Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition),  out hit, 100))
 				return;
 				newLoc = new Vector3 (hit.point.x, transform.position.y, hit.point.z);
+			ParticleSystem clone;
+			clone = Instantiate(ClickPS, newLoc, transform.rotation) as ParticleSystem;
 				
 			moveTarget.transform.position = newLoc;
 
