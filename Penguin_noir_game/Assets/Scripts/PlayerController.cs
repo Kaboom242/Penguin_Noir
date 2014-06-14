@@ -79,18 +79,43 @@ public class PlayerController : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider collider)
 	{
-		if (collider.gameObject.tag == "Teleport")
+		GameObject teleportTo;
+		
+		
+		if (collider.gameObject.name.Contains("Teleport"))
 		{
-			canMove = false;
-			cam.GetComponent<Camera_movement>().FadeOut(new Vector3 (collider.transform.position.x,collider.transform.position.y,collider.transform.position.z + 38));
-			
+			//Teleport Start
+			if (collider.gameObject.name.Contains("Back") == false)
+			{
+				teleportTo = GameObject.Find(collider.gameObject.name + "Back");
+				canMove = false;
+				cam.GetComponent<Camera_movement>().FadeOut( new Vector3 (teleportTo.transform.position.x, teleportTo.transform.position.y, teleportTo.transform.position.z + 5)); /*new Vector3 (collider.transform.position.x,collider.transform.position.y,collider.transform.position.z + 38));*/
+			}
 		}
-		if (collider.gameObject.tag == "TeleportBack")
+		
+		if (collider.gameObject.name.Contains("Teleport"))
 		{
-			canMove = false;
-			cam.GetComponent<Camera_movement>().FadeOut(new Vector3 (collider.transform.position.x,collider.transform.position.y,collider.transform.position.z - 38));
-			
+			//Teleport End
+			if (collider.gameObject.name.Contains("Back") == true)
+			{
+				teleportTo = GameObject.Find(collider.gameObject.name.Substring(0,collider.gameObject.name.Length-4));
+				canMove = false;
+				cam.GetComponent<Camera_movement>().FadeOut(new Vector3 (teleportTo.transform.position.x, teleportTo.transform.position.y, teleportTo.transform.position.z - 5));/*new Vector3 (collider.transform.position.x,collider.transform.position.y,collider.transform.position.z - 38));*/
+			}
 		}
+		
+//		if (collider.gameObject.tag == "Teleport")
+//		{
+//			canMove = false;
+//			cam.GetComponent<Camera_movement>().FadeOut(new Vector3 (collider.transform.position.x,collider.transform.position.y,collider.transform.position.z + 38));
+//			
+//		}
+//		if (collider.gameObject.tag == "TeleportBack")
+//		{
+//			canMove = false;
+//			cam.GetComponent<Camera_movement>().FadeOut(new Vector3 (collider.transform.position.x,collider.transform.position.y,collider.transform.position.z - 38));
+//			
+//		}
 	}
 	
 	public void Teleport(Vector3 destination)
